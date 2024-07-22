@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" square Module """
+""" Square Module """
 
 
 class Square():
     """ Square class """
-    width = 0
-    height = 0
+    __width = 0
+    __height = 0
 
     def __init__(self, *args, **kwargs):
         """ Constructor """
