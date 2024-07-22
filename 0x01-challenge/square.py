@@ -5,12 +5,22 @@ Square Module
 
 
 class Square():
-    """ Square class """
+    """
+    Attr:
+        width
+        height
+    Methods:
+        __init__(self, *args, **knwargs)
+        area(self)
+        perimeter(self)
+        __str__(self)
+    """
+
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """ Constructor """
+        """ Initialize square instance with width and height """
         if kwargs:
             for key, value in kwargs.items():
                 setattr(self, key, value)
