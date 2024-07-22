@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Square Module """
+"""
+Square Module
+"""
 
 
 class Square():
@@ -9,8 +11,9 @@ class Square():
 
     def __init__(self, *args, **kwargs):
         """ Constructor """
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        if kwargs is not None:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def area_of_my_square(self):
         """ Area of the square """
@@ -18,7 +21,7 @@ class Square():
 
     def PermiterOfMySquare(self):
         """ Perimeter of the square """
-        return 4 * self.width
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """ String representation """
