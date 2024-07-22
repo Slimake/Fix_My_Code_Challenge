@@ -11,7 +11,7 @@ class Square():
 
     def __init__(self, *args, **kwargs):
         """ Constructor """
-        if kwargs is not None:
+        if kwargs:
             for key, value in kwargs.items():
                 setattr(self, key, value)
             if 'width' in kwargs.keys() and self.height != self.width:
