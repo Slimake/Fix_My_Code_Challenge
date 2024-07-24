@@ -27,9 +27,8 @@ class Square():
 
     def area_of_my_square(self):
         """ Area of the square """
-        if self.width != self.height:
-            self.height = self.width
-            return self.width * self.height
+        if self.width == self.height:
+            return self.width * self.width
         else:
             return self.width * self.height
 
