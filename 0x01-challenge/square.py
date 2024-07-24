@@ -30,7 +30,7 @@ class Square():
         if self.width != self.height:
             self.height = self.width
             return self.width * self.height
-        else
+        else:
             return self.width * self.height
 
     def permiter_of_my_square(self):
