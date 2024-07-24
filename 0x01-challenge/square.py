@@ -24,14 +24,18 @@ class Square():
         if kwargs:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+        if 'width' in kwargs.keys() and self.height != self.width:
+            self.height = self.width
+        if 'height' in kwargs.keys() and self.width != self.height:
+            self.width = self.height
 
     def area_of_my_square(self):
         """ Area of the square """
-        return self.width * self.width
+        return self.width * self.height
 
     def permiter_of_my_square(self):
         """ Perimeter of the square """
-        return self.width * 4
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """ String representation """
