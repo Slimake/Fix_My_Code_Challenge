@@ -21,16 +21,12 @@ class Square():
 
     def __init__(self, *args, **kwargs):
         """ Initialize square instance with width and height """
-        if kwargs:
-            for key, value in kwargs.items():
-                setattr(self, key, value)
+        for key, value in kwargs.items():
+            setattr(self, key, value)
 
     def area_of_my_square(self):
         """ Area of the square """
-        if self.width == self.height:
-            return self.width * self.width
-        else:
-            return self.width * self.height
+        return self.width * self.width
 
     def permiter_of_my_square(self):
         """ Perimeter of the square """
